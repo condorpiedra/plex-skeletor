@@ -1,15 +1,15 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./out-tsc/app",
-    "types": ["node","jquery"]
+    "outDir": "./out-tsc/app"
   },
   "files": [
     "src/main.ts",
     "src/polyfills.ts"
   ],
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "node_modules/@andes/**/*.ts",
   ],
   "exclude": [
     "src/test.ts",
